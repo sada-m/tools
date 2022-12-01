@@ -2,9 +2,9 @@
 header("Content-type: text/html; charset=utf-8\n");
 header("X-Content-Type-Options: nosniff");
 header('X-Frame-Options: DENY');
-date_default_timezone_set('Asia/Tokyo');
+date_default_timezone_set('Asia/Tokyo');//Plese set your timezon
 define('KWD_DIR',getcwd());//Must be an absolute path and end with "/"
-$aryNG=array('upload','log');
+$aryNG=array('upload','log'); //not read file names
 echo getcwd().'<br>';
 $msg='';
 if (!isset($_GET['y']) || !isset($_GET['m']) || !isset($_GET['d'])){
