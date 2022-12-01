@@ -47,7 +47,7 @@ if ($msg==''){
 							$fdt=date("Y/m/d H:i:s",$ft);
 							echo $ckpath.' ('.$fdt.$ft.')<br>'."\n";
 							if ($last=='' || $fdt>$last){
-								if (strpos($ckpath,'find_update_files_by_time.php')>0){
+								if (strpos($ckpath,'find_update_files_by_date.php')>0){
 									//nothing
 								}else{
 									$last=$fdt;
