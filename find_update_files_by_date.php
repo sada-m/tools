@@ -1,4 +1,6 @@
 <?php
+//LICENSE :　https://opensource.org/licenses/mit-license.php
+//(c) 2022 https://github.com/sada-m/tools/
 header("Content-type: text/html; charset=utf-8\n");
 header("X-Content-Type-Options: nosniff");
 header('X-Frame-Options: DENY');
