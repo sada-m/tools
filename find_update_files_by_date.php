@@ -89,6 +89,17 @@ hour:<input type="text" style="50px;ime-mode:disabled;" name="h" maxlength="2" v
 <input type="submit" value="go">
 （Exclusion:<?php echo $jogai;?>）
 </form>
+<p>
+<?php
+echo '<a href="find_update_files_by_date.php?y='.date("Y").'&m='.date("m").'&d='.date("d").'&h=0">today</a> | ';
+$mktime=mktime(0,0,0,date("m"),(date("d")-1),date("Y"));
+echo '<a href="find_update_files_by_date.php?y='.date("Y",$mktime).'&m='.date("m",$mktime).'&d='.date("d",$mktime).'&h=0">yestarday</a> | ';
+$mktime=mktime(0,0,0,date("m"),(date("d")-7),date("Y"));
+echo '<a href="find_update_files_by_date.php?y='.date("Y",$mktime).'&m='.date("m",$mktime).'&d='.date("d",$mktime).'&h=0">a week ago</a> | ';
+$mktime=mktime(0,0,0,(date("m")-1),date("d"),date("Y"));
+echo '<a href="find_update_files_by_date.php?y='.date("Y",$mktime).'&m='.date("m",$mktime).'&d='.date("d",$mktime).'&h=0">a month ago</a> | ';
+?>
+</p>
 <br>※Coordinated Universal Time may be used depending on the environment, so please check that area as well.
 <?php
 }
