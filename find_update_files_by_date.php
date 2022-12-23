@@ -6,7 +6,7 @@ header("X-Content-Type-Options: nosniff");
 header('X-Frame-Options: DENY');
 date_default_timezone_set('Asia/Tokyo');//Plese set your timezon
 define('KWD_DIR',getcwd());//Must be an absolute path and end with "/"
-$aryNG=array('upload/','log/'); //not read file names
+$aryNG=array('upload/','xxxx/log/'); //not read file names
 echo getcwd().'<br>';
 $msg='';
 if (!isset($_GET['y']) || !isset($_GET['m']) || !isset($_GET['d']) || !isset($_GET['h'])){
